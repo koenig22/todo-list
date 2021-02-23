@@ -7,7 +7,7 @@ public class Liste {
     private Benutzer owner;
     private ArrayList<Aufgabe> tasks = new ArrayList<Aufgabe>();
 
-    Liste (String name, Benutzer owner, ArrayList<Aufgabe> tasks) {
+    Liste (String name, Benutzer owner) {
         this.name = name;
         this.owner = owner;
     }
@@ -23,6 +23,10 @@ public class Liste {
     public void addAufgabe (Aufgabe aufgabe) {
         tasks.add(aufgabe);
     }
+     public void setOwner (Benutzer owner) {
+        this.owner=owner;
+     }
+     
 }
 
 
