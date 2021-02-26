@@ -4,7 +4,7 @@ public class Aufgabe {
     private String description;
     private Datum todoUntil;
 
-    Aufgabe (String description, Datum todoUntil) {
+    public Aufgabe (String description, Datum todoUntil) {
         this.description=description;
         this.todoUntil=todoUntil;
     }

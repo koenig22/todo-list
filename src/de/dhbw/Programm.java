@@ -13,6 +13,8 @@ public class Programm {
 
         liste.addAufgabe(aufgabe1);
         benutzer1.addListe(liste);
+        System.out.println(liste.getTasks().get(0));
+        }
 
     }
-}
+

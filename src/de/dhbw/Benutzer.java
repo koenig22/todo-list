@@ -6,7 +6,7 @@ public class Benutzer {
     private String name;
     private ArrayList<Liste> listen =new ArrayList<Liste>();
 
-    Benutzer (String name, ArrayList<Liste> listen) {
+    public Benutzer (String name) {
         this.name=name;
     }
 

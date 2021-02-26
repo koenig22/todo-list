@@ -8,7 +8,7 @@ public class Datum {
     // date1.day = "01";
     // int i = 01;
     // 01.01.2020 -> day: 1, month: 1, year: 2020
-    Datum(String day, String month, String year) {
+    public Datum(String day, String month, String year) {
         this.day = day;
         this.month = month;
         this.year = year;
