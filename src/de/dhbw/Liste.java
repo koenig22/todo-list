@@ -7,16 +7,15 @@ public class Liste {
     private Benutzer owner;
     private ArrayList<Aufgabe> tasks = new ArrayList<Aufgabe>();
 
-    public Liste (String name, Benutzer owner) {
+    public Liste (String name) {
         this.name = name;
-        this.owner = owner;
     }
 
     public void setName (String name) {
         this.name =name;
     }
 
-    public ArrayList<Aufgabe> getTasks () {
+    public ArrayList<Aufgabe> getTasks() {
         return this.tasks;
     }
 
@@ -26,7 +25,11 @@ public class Liste {
      public void setOwner (Benutzer owner) {
         this.owner=owner;
      }
-     
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
 
 

@@ -4,10 +4,6 @@ public class Aufgabe {
     private String description;
     private Datum todoUntil;
 
-    public Aufgabe (String description, Datum todoUntil) {
-        this.description=description;
-        this.todoUntil=todoUntil;
-    }
 
     public String getDescription() {
         return description;
@@ -23,5 +19,10 @@ public class Aufgabe {
 
     public void setTodoUntil(Datum todoUntil) {
         this.todoUntil = todoUntil;
+    }
+
+    @Override
+    public String toString() {
+        return "Die Aufgabe \'" + this.description + "\' ist fällig bis zum " + this.todoUntil;
     }
 }

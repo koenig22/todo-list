@@ -11,10 +11,19 @@ public class Benutzer {
     }
 
     public void setName (String name) {
-        this.name=name;
+       this.name=name;
+    }
+
+    public String getName () {
+        return this.name;
     }
 
     public void addListe (Liste liste) {
         listen.add(liste);
     }
+
+    public ArrayList<Liste> getListe () {
+        return this.listen;
+    }
+
 }

@@ -12,7 +12,6 @@ public class Datum {
         this.day = day;
         this.month = month;
         this.year = year;
-        System.out.println("Neues Objekt vom Typ Date erstellt: " + this.day + "." + this.month + "." + this.year);
     }
 
     public void setDay(String day) {
@@ -41,5 +40,10 @@ public class Datum {
             return false;
         }
         // return (yearAlsInteger % 4 == 0);
+    }
+
+    @Override
+    public String toString() {
+        return this.day + "." + this.month + "." + this.year;
     }
 }
