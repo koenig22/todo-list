@@ -38,6 +38,7 @@ public class Programm {
         System.out.println("Der Benutzer " + benutzer1.getName()+ " hat folgende Listen: "+ benutzer1.getListe());
         System.out.println("Welche Liste möchtest du dir anschauen? (zBsp.: '1' für '"+benutzer1.getListe().get(0)+ "')");
 
+        //Scanner
         Scanner input = new Scanner(System.in);
         int wahl = input.nextInt();
 
