@@ -35,19 +35,23 @@ public class Programm {
         liste.addAufgabe(aufgabe2);
         liste2.addAufgabe(aufgabe3);
 
-        System.out.println("Der Benutzer " + benutzer1.getName()+ " hat folgende Listen: "+ benutzer1.getListe());
-        System.out.println("Welche Liste möchtest du dir anschauen? (zBsp.: '1' für '"+benutzer1.getListe().get(0)+ "')");
+        System.out.println("Der Benutzer " + benutzer1.getName() + " hat folgende Listen: " + benutzer1.getListe());
+        System.out.println("Welche Liste möchtest du dir anschauen? (zBsp.: '1' für '" + benutzer1.getListe().get(0) + "')");
 
         //Scanner
         Scanner input = new Scanner(System.in);
         int wahl = input.nextInt();
 
         //Liste ausgeben lassen
-        for (int i = 0; i < benutzer1.getListe().get(wahl-1).getTasks().size(); i++) {
-            System.out.print(i+1 +". ");
-            System.out.println(benutzer1.getListe().get(wahl-1).getTasks().get(i));
+        for (int i = 0; i < benutzer1.getListe().get(wahl - 1).getTasks().size(); i++) {
+            System.out.print(i + 1 + ". ");
+            System.out.println(benutzer1.getListe().get(wahl - 1).getTasks().get(i));
+
+
+            System.out.println("Commit?");
         }
     }
+
 
 }
 
